@@ -1,13 +1,8 @@
 # Import KafkaConsumer from Kafka library
 from kafka import KafkaConsumer
 from encrypt_decrypt import cipher_encrypt, cipher_decrypt
-# Import sys module
 import sys
 
-# Import json module to serialize data
-# import os
-
-# Initialize consumer variable and set property for JSON decode
 consumer = KafkaConsumer('test', bootstrap_servers=['localhost:9092'],
     value_deserializer=lambda x: x.decode('utf-8'))
 

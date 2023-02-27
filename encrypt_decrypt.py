@@ -1,4 +1,4 @@
-# import tkinter as tk
+
 # The Encryption Function
 def cipher_encrypt(plain_text, key):
 
@@ -83,76 +83,4 @@ def cipher_decrypt(ciphertext, key):
             decrypted += c
 
     return decrypted
-# def encrypt(text,s):
-#     result = ""
- 
-#     # traverse text
-#     for i in range(len(text)):
-#         char = text[i]
- 
-#         # Encrypt uppercase characters
-#         if (char.isupper()):
-#             result += chr((ord(char) + s-65) % 26 + 65)
- 
-#         # Encrypt lowercase characters
-#         else:
-#             result += chr((ord(char) + s - 97) % 26 + 97)
- 
-#     return result
 
-# def decrypt(text,s):
-#     result = ""
- 
-#     # traverse text
-#     for i in range(len(text)):
-#         char = text[i]
- 
-#         # Decrypt uppercase characters
-#         if (char.isupper()):
-#             result += chr((ord(char) - s+65) % 26 + 65)
- 
-#         # Encrypt lowercase characters
-#         else:
-#             result += chr((ord(char) - s-97) % 26 + 97)
- 
-#     return result
- 
-#check the above function
-# text = "ATTACKATONCE"
-# s = 4
-
-
-# def f():
-#     def save():
-#         a = t.get()
-#         f = open(('readdata.txt'), 'w')
-#         f.write(a)
-#         f.close()
-#         return
-
-#     top = tk.Tk()
-#     t = tk.StringVar()
-#     e = tk.Entry(top, textvariable = t).pack()
-#     b = tk.Button(top, text = 'Save as a file', command = save).pack()
-#     top.mainloop()
-
-
-# f()
-# file = open('Users/asthapatwa/Downloads/kafka_2.12-3.4.0/python_assignment/files/readdata.txt', 'r')
-
-# #To print the content of the whole file
-# text = file.readline() 
-# file.close()
-
-# print ("Text  : " + text)
-# ciper = cipher_encrypt(text,4)
-# print ("Cipher: " + ciper)
-# encr = open("encryptdata.txt",'w')
-# encr.write(str(ciper))
-# encr.close()
-
-# decrypt = cipher_decrypt(ciper, 4)
-# print("Decrypt: " + decrypt)
-# F = open("decryptdata.txt",'w')
-# F.write(str(decrypt))
-# F.close()
